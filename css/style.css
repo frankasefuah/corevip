@@ -1467,7 +1467,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Button
 --------------------------------------------------------------*/
-#btn {
+.btn-f {
   background: #f82249;
   border: 0;
   padding: 10px 40px;
@@ -1477,8 +1477,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
-#btn:hover {
+.btn-f:hover {
   background: #e0072f;
+}
+
+.btn-f>a {
+  color: white;
 }
 
 /*--------------------------------------------------------------
