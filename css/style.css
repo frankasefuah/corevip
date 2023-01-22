@@ -215,12 +215,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -277,11 +277,11 @@ h6 {
   color: #fff;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -294,8 +294,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   width: 100%;
 }
@@ -345,7 +345,7 @@ h6 {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   background: #f82249;
   color: #fff;
 }
@@ -1218,7 +1218,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
@@ -1282,6 +1282,83 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
 }
+
+/*--------------------------------------------------------------
+# Sponsorship Packages Section
+--------------------------------------------------------------*/
+
+#sponsorhip-packages {
+  padding: 60px 0;
+}
+
+#sponsorhip-packages .card {
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+}
+
+#sponsorhip-packages .card:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+}
+
+#sponsorhip-packages .card hr {
+  margin: 25px 0;
+}
+
+#sponsorhip-packages .card .card-title {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#sponsorhip-packages .card .card-price {
+  font-size: 48px;
+  margin: 0;
+}
+
+#sponsorhip-packages .card ul li {
+  margin-bottom: 20px;
+}
+
+#sponsorhip-packages .card .text-muted {
+  opacity: 0.7;
+}
+
+#sponsorhip-packages .card .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f82249;
+  border: 0;
+  color: #fff;
+}
+
+#sponsorhip-packages .card .btn:hover {
+  background-color: #e0072f;
+}
+
+#sponsorhip-packages #sponsorhip-packages-modal input,
+#sponsorhip-packages #sponsorhip-packages-modal select {
+  border-radius: 0;
+}
+
+#sponsorhip-packages #sponsorhip-packages-modal .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f82249;
+  border: 0;
+  color: #fff;
+}
+
+#sponsorhip-packages #sponsorhip-packages-modal .btn:hover {
+  background-color: #e0072f;
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1548,6 +1625,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
