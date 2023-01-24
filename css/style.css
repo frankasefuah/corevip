@@ -698,6 +698,57 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# About Dropdown Section
+--------------------------------------------------------------*/
+
+#about-dropdown {
+  padding: 60px 0;
+}
+
+#about-dropdown #about-dropdown-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* #about-dropdown #about-dropdown-list li {
+  border-bottom: 1px solid #ddd;
+} */
+
+#about-dropdown #about-dropdown-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+#about-dropdown #about-dropdown-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#about-dropdown #about-dropdown-list p {
+  margin-bottom: 20px;
+}
+
+#about-dropdown #about-dropdown-list a.collapse {
+  color: #f03127;
+}
+
+#about-dropdown #about-dropdown-list a.collapsed {
+  color: #000;
+}
+
+#about-dropdown #about-dropdown-list a.collapsed i::before {
+  content: "\f055" !important;
+}
+
+/*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
 
