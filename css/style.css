@@ -318,7 +318,7 @@ h6 {
 }
 
 .nav-menu li.buy-tickets a:hover {
-  background: none;
+  background: #212759;
 }
 
 .nav-menu li.buy-tickets:hover a:before,
