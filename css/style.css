@@ -1519,8 +1519,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Button
 --------------------------------------------------------------*/
 .btn-f {
-  background: #f03127;
-  border: 0;
+  background: #f0312700;
+  border: 2px solid #f03127;
   padding: 10px 40px;
   color: #fff;
   transition: 0.4s;
