@@ -1551,8 +1551,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
 }
 
-.btn-f-red>a {
-  color: #f03127;
+.btn-f-red>a:hover {
+  color: white !important;
 }
 
 /*--------------------------------------------------------------
