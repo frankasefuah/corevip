@@ -1536,6 +1536,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
 }
 
+.btn-f-red {
+  background: #f0312700;
+  border: 2px solid #f03127;
+  padding: 10px 40px;
+  color: #f03127;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-f-red:hover {
+  background: #f03127;
+  color: white;
+}
+
+.btn-f-red>a {
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
