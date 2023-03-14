@@ -1548,11 +1548,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .btn-f-red:hover {
   background: #f03127;
-  color: white;
+  color: black;
 }
 
 .btn-f-red>a:hover {
-  color: white !important;
+  color: black !important;
 }
 
 /*--------------------------------------------------------------
