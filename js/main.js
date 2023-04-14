@@ -146,7 +146,7 @@ jQuery(document).ready(function ($) {
   // custom code
   // !! COUNTDOWN TIMER 
   // Set the date to countdown to (YYYY-MM-DD format)
-  const countdownDate = "2023-12-31";
+  const countdownDate = "2023-7-4";
 
   // Get the countdown timer element
   const countdownEl = document.getElementById("countdown");
