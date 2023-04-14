@@ -145,8 +145,8 @@ jQuery(document).ready(function ($) {
 
   // custom code
   // !! COUNTDOWN TIMER 
-  // Set the date to countdown to
-  const countdownDate = new Date("2023-07-04T23:59:59").getTime();
+  // Set the date to countdown to (YYYY-MM-DD format)
+  const countdownDate = "2023-12-31";
 
   // Get the countdown timer element
   const countdownEl = document.getElementById("countdown");
@@ -156,23 +156,28 @@ jQuery(document).ready(function ($) {
     // Get the current date and time
     const now = new Date().getTime();
 
-    // Calculate the time remaining
-    const timeRemaining = countdownDate - now;
+    // Get the date and time of the countdown date
+    const countdownTime = new Date(countdownDate).getTime();
+
+    // Calculate the time remaining in seconds
+    const timeRemaining = Math.floor((countdownTime - now) / 1000);
+
+    // If the countdown date has passed, stop the countdown
+    if (timeRemaining < 0) {
+      clearInterval(countdownInterval);
+      countdownEl.textContent = "Countdown expired!";
+      return;
+    }
 
     // Calculate the days, hours, minutes, and seconds remaining
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    const daysRemaining = Math.floor(timeRemaining / (24 * 60 * 60));
+    const hoursRemaining = Math.floor((timeRemaining % (24 * 60 * 60)) / (60 * 60));
+    const minutesRemaining = Math.floor((timeRemaining % (60 * 60)) / 60);
+    const secondsRemaining = Math.floor(timeRemaining % 60);
 
     // Update the countdown timer element
-    countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-    // If the countdown is complete, stop the interval
-    if (timeRemaining <= 0) {
-      clearInterval(countdownInterval);
-      countdownEl.textContent = "Countdown complete!";
-    }
+    countdownEl.textContent = `${daysRemaining} days, ${hoursRemaining} hours, ${minutesRemaining} minutes, ${secondsRemaining} seconds`;
   }, 1000); // 1000 milliseconds = 1 second
+
 
 });
